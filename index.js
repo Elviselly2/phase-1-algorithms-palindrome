@@ -1,9 +1,24 @@
-function isPalindrome(word) {
+function isPalindrome(str) {
   // Write your algorithm here
+  // Reverse the string
+  const reversedStr = str.split('').reverse().join('');
+  
+  // Check if the original string matches the reversed string
+  return str === reversedStr;
 }
+
+// Test cases
+console.log(isPalindrome("madam")); // true
+console.log(isPalindrome("robot")); // false
+console.log(isPalindrome("racecar")); // true
+console.log(isPalindrome("hello")); // false
 
 /* 
   Add your pseudocode here
+  writing the fuction with a string agument
+  reverse the string
+  chech if original string=== reversed string
+  test the cases
 */
 
 /*
